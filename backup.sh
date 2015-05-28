@@ -1,5 +1,5 @@
 #!/bin/bash
-
+BACKUP=/backup
 # all databases
 mysqldump -u $MUSER -p$MPASS --all-databases --single-transaction > "$BACKUP/sql/$NOW/all_databases.sql"
 # backup each base of the database
