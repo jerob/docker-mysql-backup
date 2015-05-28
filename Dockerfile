@@ -25,7 +25,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -y update && apt-get -y upgrade
 
-RUN apt-get -y install mysqldump
+RUN apt-get -y install mysql-client
 
 ADD ./backup.sh /backup.sh
 
