@@ -1,5 +1,6 @@
 #!/bin/bash
 BACKUP=/backup
+NOW="$(date +"%d-%m-%Y_%H%M")"
 # all databases
 mysqldump -u $MUSER -p$MPASS --all-databases --single-transaction > "$BACKUP/sql/$NOW/all_databases.sql"
 # backup each base of the database
